@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!DOCTYPE html>
+<head>
+<link
+	href='http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css'
+	rel='stylesheet' type='text/css'>
+<link
+	href='//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/css/datepicker.min.css'
+	rel='stylesheet' type='text/css'>
+<link
+	href='//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/1.8/css/bootstrap-switch.css'
+	rel='stylesheet' type='text/css'>
+<link
+	href='http://davidstutz.github.io/bootstrap-multiselect/css/bootstrap-multiselect.css'
+	rel='stylesheet' type='text/css'>
+<script
+	src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'
+	type='text/javascript'></script>
+<script
+	src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js'
+	type='text/javascript'></script>
+<script
+	src='//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min.js'
+	type='text/javascript'></script>
+<script
+	src='//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/1.8/js/bootstrap-switch.min.js'
+	type='text/javascript'></script>
+<script
+	src='http://davidstutz.github.io/bootstrap-multiselect/js/bootstrap-multiselect.js'
+	type='text/javascript'></script>
+</head>
+<body>
+	<div class='container'>
+		<div class='panel panel-primary dialog-panel'>
+			<div class='panel-heading'>
+				<h5>Radiology</h5>
+			</div>
+			<div class='panel-body'>
+				<form class='form-horizontal' role='form'>
+					<div class="box1">
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='date_examination'>Date of examination</label>
+							<div class='col-md-6'>
+								<div class='form-group'>
+									<div class='col-md-6'>
+										<input class='form-control' id='id_date_examination'
+											placeholder='Diameter' type='text'>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='purpose'>Purpose</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<select class='form-control' id='id_purpose'></select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='investigation'>Investigation</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<select class='form-control' id='id_investigation'></select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-label'
+								for='traverse_diameter'>Traverse Diameter Tumour</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<input class='form-control' id='id_traverse_diameter'
+											placeholder='Traverse Diameter Tumour' type='text'>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-label'
+								for='longitudinal_diameter'>Longitudinal Diameter Tumour</label>
+							<div class='col-md-6'>
+								<div class='form-group'>
+									<div class='col-md-11'>
+										<input class='form-control' id='id_longitudinal_diameter'
+											placeholder='Longitudinal Diameter Tumour' type='text'>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-label'
+								for='ap_diameter'>AP Diameter Tumour</label>
+							<div class='col-md-6'>
+								<div class='form-group'>
+									<div class='col-md-11'>
+										<input class='form-control' id='id_ap_diameter'
+											placeholder='AP Diameter Tumour' type='text'>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='epicenter'>Epicenter of Mass</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<select class='form-control' id='id_epicenter'></select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='uterine'>Uterine Body</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<select class='form-control' id='id_uterine'></select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='myometrial'>Myometrial Invasion</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<select class='form-control' id='id_myometrial'></select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='cervix'>Cervix</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<select class='form-control' id='id_cervix'></select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='reported'>Reported By</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<select class='form-control' id='id_reported'></select>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='vagina'>Vagina</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<select class='form-control' id='id_vagina'></select>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='bladder'>Bladder</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<select class='form-control' id='id_bladder'></select>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='rectum'>Rectum</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<select class='form-control' id='id_rectum'></select>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='left_parametrium'>Left Parametrium</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<select class='form-control' id='id_left_parametrium'></select>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='right_parametrium'>Right Parametrium</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<select class='form-control' id='id_right_parametrium'></select>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='uretric_obstuction'>Ureteric Obstruction</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<select class='form-control' id='id_uretric_obstuction'></select>
+									</div>
+								</div>
+							</div>
+						</div>
+					<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-label'
+								for='pelvic_mass'>Pelvic Mass (Extrauterine Extraparametrial)</label>
+							<div class='col-md-6'>
+								<div class='form-group'>
+									<div class='col-md-11'>
+										<input class='form-control' id='id_pelvic_mass'
+											placeholder='Pelvic Mass' type='text'>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='metastases'>Distant Metastases</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<select class='form-control' id='id_metastases'></select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='response'>Treatement Response</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<select class='form-control' id='id_response'></select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_smoking'>Lymph Nodes Enlarged</label>
+            <div class='col-md-8'>
+              <div class='make-switch' data-off-label='NO' data-on-label='YES' id='id_nodes_enlarged'>
+                <input id='id_nodes_enlarged' type='checkbox' value='chk_hydro'>
+              </div>
+            </div>
+          </div>
+          <div>
+          <br>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br>
+          </div>
+          
+          <div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-label'
+								for='primary'>SUVMax Primary</label>
+							<div class='col-md-6'>
+								<div class='form-group'>
+									<div class='col-md-11'>
+										<input class='form-control' id='id_primary'
+											placeholder='SUVMax Primary' type='text'>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-label'
+								for='lymph_nodes'>SUVMax Lympn Node</label>
+							<div class='col-md-6'>
+								<div class='form-group'>
+									<div class='col-md-11'>
+										<input class='form-control' id='id_lymph_nodes'
+											placeholder='SUVMax Lympn Node' type='text'>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-label'
+								for='hottest_node'>Site of Hottest Node</label>
+							<div class='col-md-6'>
+								<div class='form-group'>
+									<div class='col-md-11'>
+										<input class='form-control' id='id_hottest_node'
+											placeholder='Site of Hottest Node' type='text'>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-label'
+								for='largest_node'>Site of Largest Node</label>
+							<div class='col-md-6'>
+								<div class='form-group'>
+									<div class='col-md-11'>
+										<input class='form-control' id='id_largest_node'
+											placeholder='Site of Largest Node' type='text'>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-label'
+								for='ece_node'>Site of ECE Node</label>
+							<div class='col-md-6'>
+								<div class='form-group'>
+									<div class='col-md-11'>
+										<input class='form-control' id='id_ece_node'
+											placeholder='Site of ECE Node' type='text'>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-label'
+								for='dwi'>DWI Equivocal node</label>
+							<div class='col-md-6'>
+								<div class='form-group'>
+									<div class='col-md-11'>
+										<input class='form-control' id='id_dwi'
+											placeholder='DWI Equivocal node' type='text'>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-label'
+								for='fracture'>Insufficiency Fracture</label>
+							<div class='col-md-6'>
+								<div class='form-group'>
+									<div class='col-md-11'>
+										<input class='form-control' id='id_fracture'
+											placeholder='Insufficiency Fracture' type='text'>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+						</div>
+					
+					<div class='box3' style="height:100%; position:relative;">
+					<div class='form-group'>
+							<label class='control-label col-md-2'
+								for='id_comments' >Comments</label>
+							<div class='col-md-6'>
+								<textarea class='form-control' id='id_comments'
+									placeholder='Additional comments' rows='3'></textarea>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='Images'>Images</label>
+								<br><br><br><br><br><br>
+						</div>
+						<div class='form-group'>
+							<div class='col-md-offset-4 col-md-3'>
+								<button class='btn-lg btn-primary' type='submit'>Submit</button>
+							</div>
+							<div class='col-md-3'>
+								<button class='btn-lg btn-danger' style='float: right'
+									type='submit'>Cancel</button>
+							</div>
+						</div>
+					</div>
+					
+
+				</form>
+				</div>
+			</div>
+		</div>
+	
+</body>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,249 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!DOCTYPE html>
+<head>
+<link
+	href='http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css'
+	rel='stylesheet' type='text/css'>
+<link
+	href='//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/css/datepicker.min.css'
+	rel='stylesheet' type='text/css'>
+<link
+	href='//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/1.8/css/bootstrap-switch.css'
+	rel='stylesheet' type='text/css'>
+<link
+	href='http://davidstutz.github.io/bootstrap-multiselect/css/bootstrap-multiselect.css'
+	rel='stylesheet' type='text/css'>
+<script
+	src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'
+	type='text/javascript'></script>
+<script
+	src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js'
+	type='text/javascript'></script>
+<script
+	src='//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min.js'
+	type='text/javascript'></script>
+<script
+	src='//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/1.8/js/bootstrap-switch.min.js'
+	type='text/javascript'></script>
+<script
+	src='http://davidstutz.github.io/bootstrap-multiselect/js/bootstrap-multiselect.js'
+	type='text/javascript'></script>
+</head>
+<body>
+	<div class='container'>
+		<div class='panel panel-primary dialog-panel'>
+			<div class='panel-heading'>
+				<h5>Clinical Examination</h5>
+			</div>
+			<div class='panel-body'>
+				<form class='form-horizontal' role='form'>
+					<div class="box1">
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='id_diameter'>Largest Diameter of Tumor (cm)</label>
+							<div class='col-md-6'>
+								<div class='form-group'>
+									<div class='col-md-6'>
+										<input class='form-control' id='id_diameter'
+											placeholder='Diameter' type='text'>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='cervix'>Cervix</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<select class='form-control' id='id_cervix'></select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='Right_Parametrial'>Right Parametrial Involvement</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<select class='form-control' id='id_right_param'></select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='Left_Parametrial'>Left Parametrial Involvement</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<select class='form-control' id='id_left_param'></select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='Vaginal'>Vaginal Involvement</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<select class='form-control' id='id_vaginal'></select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='Vulval'>Vulval Involement</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<select class='form-control' id='id_vulval'></select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='bladder_rectum'>Bladder And Rectum</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<select class='form-control' id='id_bladder_rectumx'></select>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+						</div>
+					<div class="box2">
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-label'
+								for='right_inguinal'>Right Inguinal LN</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<select class='form-control' id='id_right_inguinal'></select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-label'
+								for='id_enlarged_right_inguinal'>Number of enlarged
+								Right inguinal LN</label>
+							<div class='col-md-6'>
+								<div class='form-group'>
+									<div class='col-md-11'>
+										<input class='form-control' id='id_enlarged_right_inguinal'
+											placeholder='Number of enlarged Right inguinal LN'
+											type='text'>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-label'
+								for='id_largest_LN'>Size of largest LN in cm</label>
+							<div class='col-md-6'>
+								<div class='form-group'>
+									<div class='col-md-11'>
+										<input class='form-control' id='id_largest_LN'
+											placeholder='Size of Largest LN' type='text'>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-label'
+								for='left_inguinal'>Left Inguinal LN</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<select class='form-control' id='id_left_inguinal'>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-label'
+								for='id_enlarged_left_inguinal'>Number of enlarged Left
+								inguinal LN</label>
+							<div class='col-md-6'>
+								<div class='form-group'>
+									<div class='col-md-11'>
+										<input class='form-control' id='id_enlarged_left_inguinal'
+											placeholder='Number of enlarged Left inguinal LN' type='text'>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-label'
+								for='id_largest_left_LN'>Size of largest LN in cm</label>
+							<div class='col-md-6'>
+								<div class='form-group'>
+									<div class='col-md-11'>
+										<input class='form-control' id='id_largest_left_LN'
+											placeholder='Size of Largest LN' type='text'>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-label'
+								for='supracavicular'>Supracavicular</label>
+							<div class='col-md-4'>
+								<div class='col-md-8'>
+									<div class='form-group internal'>
+										<select class='form-control' id='id_supracavicular'></select>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class='box3' style="height:100%; position:relative;">
+					<div class='form-group'>
+							<label class='control-label col-md-2'
+								for='id_comments' >Comments</label>
+							<div class='col-md-6'>
+								<textarea class='form-control' id='id_comments'
+									placeholder='Additional comments' rows='3'></textarea>
+							</div>
+						</div>
+						<div class='form-group'>
+							<label class='control-label col-md-2 col-md-offset-2'
+								for='Images'>Images</label>
+						</div>
+						<div class='form-group'>
+							<div class='col-md-offset-4 col-md-3'>
+								<button class='btn-lg btn-primary' type='submit'>Submit</button>
+							</div>
+							<div class='col-md-3'>
+								<button class='btn-lg btn-danger' style='float: right'
+									type='submit'>Cancel</button>
+							</div>
+						</div>
+					</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>

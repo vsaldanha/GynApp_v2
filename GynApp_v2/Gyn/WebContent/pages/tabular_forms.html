@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="routingApp">
+
+<head>
+<script
+	src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.6.0.js"></script>
+<script
+	src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+</head>
+
+<body ng-controller="MainCtrl">
+	<main>
+	<section>
+		<div ng-controller="TabCtrl">
+			<tabset> <tab ng-repeat="tab in tabs"
+				heading="{{tab.title}}" active="tab.active"
+				select="onTabSelected(tab.slug)">
+			<div ng-view></div>
+			</tab> </tabset>
+		</div>
+	</section>
+	</main>
+	
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>GYN</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <!DOCTYPE html>
+<head>
+  <link href='http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+  <link href='//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/css/datepicker.min.css' rel='stylesheet' type='text/css'>
+  <link href='//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/1.8/css/bootstrap-switch.css' rel='stylesheet' type='text/css'>
+  <link href='http://davidstutz.github.io/bootstrap-multiselect/css/bootstrap-multiselect.css' rel='stylesheet' type='text/css'>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js' type='text/javascript'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js' type='text/javascript'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min.js' type='text/javascript'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/1.8/js/bootstrap-switch.min.js' type='text/javascript'></script>
+  <script src='http://davidstutz.github.io/bootstrap-multiselect/js/bootstrap-multiselect.js' type='text/javascript'></script>
+</head>
+<body>
+  <div class='container'>
+    <div class='panel panel-primary dialog-panel'>
+      <div class='panel-heading'>
+        <h5>Pathology</h5>
+      </div>
+      <div class='panel-body'>
+        <form class='form-horizontal' role='form'>
+        <div class='form-group'>
+          <label class='control-label col-md-2 col-md-offset-2' for='id_diameter'>Date of surgery</label>
+            <div class='col-md-6'>
+              <div class='form-group'>
+                <div class='col-md-6'>
+                  <input class='form-control' id='id_date_surgery' placeholder='Date' type='text'>
+                </div>
+              </div>
+              </div>
+              </div>
+
+        <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='site'>Site of Tumor</label>
+             <div class='col-md-4'>
+          <div class='col-md-8'>
+            <div class='form-group internal'>
+                  <select class='form-control' id='id_site'></select>
+                </div>
+              </div>
+              </div>
+              </div>
+              <div class='form-group'>
+          <label class='control-label col-md-2 col-md-offset-2' for='id_diameter'>Largest Diameter of Tumour (cm)</label>
+            <div class='col-md-6'>
+              <div class='form-group'>
+                <div class='col-md-6'>
+                  <input class='form-control' id='id_diameter' placeholder='cm' type='text'>
+                </div>
+              </div>
+              </div>
+              </div>
+              <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='historical_subtype'>Historical Subtype (select worst element)</label>
+             <div class='col-md-4'>
+          <div class='col-md-8'>
+            <div class='form-group internal'>
+                  <select class='form-control' id='id_historical_subtype'></select>
+                </div>
+              </div>
+              </div>
+              </div>
+              <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='grading'>Tumour Grading</label>
+             <div class='col-md-4'>
+          <div class='col-md-8'>
+            <div class='form-group internal'>
+                  <select class='form-control' id='id_grading'></select>
+                </div>
+              </div>
+              </div>
+              </div>
+              
+              <div class='form-group'>
+          <label class='control-label col-md-2 col-md-offset-2' for='depth'>Depth of invasion (mm)</label>
+            <div class='col-md-6'>
+              <div class='form-group'>
+                <div class='col-md-6'>
+                  <input class='form-control' id='id_depth' placeholder='mm' type='text'>
+                </div>
+              </div>
+              </div>
+              </div>
+              
+              <div class='form-group'>
+          <label class='control-label col-md-2 col-md-offset-2' for='thickness'>Total thickness of Myometrium (mm)</label>
+            <div class='col-md-6'>
+              <div class='form-group'>
+                <div class='col-md-6'>
+                  <input class='form-control' id='id_thickness' placeholder='mm' type='text'>
+                </div>
+              </div>
+              </div>
+              </div>
+              
+              <div class='form-group'>
+          <label class='control-label col-md-2 col-md-offset-2' for='thickness_cervix'>Total thickness of cervix (mm)</label>
+            <div class='col-md-6'>
+              <div class='form-group'>
+                <div class='col-md-6'>
+                  <input class='form-control' id='id_thickness_cervix' placeholder='mm' type='text'>
+                </div>
+              </div>
+              </div>
+              </div>
+                  <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='resection'>Resection Management</label>
+             <div class='col-md-4'>
+          <div class='col-md-8'>
+            <div class='form-group internal'>
+                  <select class='form-control' id='id_resection'></select>
+                </div>
+              </div>
+              </div>
+              </div>
+                  <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='pattern'>Growth Pattern</label>
+             <div class='col-md-4'>
+          <div class='col-md-8'>
+            <div class='form-group internal'>
+                  <select class='form-control' id='id_pattern'></select>
+                </div>
+              </div>
+              </div>
+              </div>
+              
+              <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='lvsi'>LVSI</label>
+             <div class='col-md-4'>
+          <div class='col-md-8'>
+            <div class='form-group internal'>
+                  <select class='form-control' id='id_lvsi'></select>
+                </div>
+              </div>
+              </div>
+              </div>
+              <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='ln'>Surgery to LN</label>
+             <div class='col-md-4'>
+          <div class='col-md-8'>
+            <div class='form-group internal'>
+                  <select class='form-control' id='id_ln'></select>
+                </div>
+              </div>
+              </div>
+              </div>
+              <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='nodes_removed'>Number of nodes removed</label>
+            <div class='col-md-6'>
+              <div class='form-group'>
+                <div class='col-md-11'>
+                  <input class='form-control' id='id_nodes_removed' placeholder='Number of nodes removed' type='text'>
+                </div>
+              </div>
+              </div>
+          </div>
+           <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='nodes_positive'>Were Nodes Positive</label>
+            <div class='col-md-8'>
+              <div class='make-switch' data-off-label='NO' data-on-label='YES' id='id_nodes_positive'>
+                <input id='id_nodes_positive' type='checkbox' value='chk_hydro'>
+              </div>
+            </div>
+          </div>
+          
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='id_comments'>Comments</label>
+            <div class='col-md-6'>
+              <textarea class='form-control' id='id_comments' placeholder='Additional comments' rows='3'></textarea>
+            </div>
+          </div>
+          <div class='form-group'>
+            <label class='control-label col-md-2 col-md-offset-2' for='Images'>Images</label>
+          </div>
+          <div class='form-group'>
+            <div class='col-md-offset-4 col-md-3'>
+              <button class='btn-lg btn-primary' type='submit'>Submit</button>
+            </div>
+            <div class='col-md-3'>
+              <button class='btn-lg btn-danger' style='float:right' type='submit'>Cancel</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>
